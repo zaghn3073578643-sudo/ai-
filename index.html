@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI能力测评系统</title>
+    <!-- 样式 -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- ECharts雷达图 -->
+    <script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+    <!-- 截图生成卡片 -->
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas/dist/html2canvas.min.js"></script>
+</head>
+<body>
+    <h1 class="page-title">能力测评系统</h1>
+
+    <!-- 首页输入昵称 -->
+    <div id="homePage" class="container">
+        <h2>AI能力测评系统</h2>
+        <input type="text" id="nickname" placeholder="请输入你的昵称">
+        <button id="startBtn">开始测评</button>
+    </div>
+
+    <!-- 答题页面 -->
+    <div id="quizPage" class="container" style="display:none;">
+        <div class="progress-text">第1/10</div>
+        <div class="progress-bar">
+            <div class="progress"></div>
+        </div>
+        <div class="question-box"></div>
+        <div class="options-wrap">
+            <div class="option"></div>
+            <div class="option"></div>
+            <div class="option"></div>
+            <div class="option"></div>
+        </div>
+        <div class="btn-group">
+            <button class="small-btn">上一题</button>
+            <button class="small-btn">下一题</button>
+        </div>
+    </div>
+
+    <!-- 结果雷达页 -->
+    <div id="resultPage" class="container" style="display:none;">
+        <h3 class="result-title"></h3>
+        <div id="radar" style="width:360px;height:360px;margin:20px auto;"></div>
+        <button id="createCard">生成分享卡片</button>
+        <button id="restartBtn">重新测评</button>
+    </div>
+
+    <!-- 卡片页面（含二维码qr.png） -->
+    <div id="cardPage" class="container" style="display:none;">
+        <div id="cardBox" class="card-box">
+            <div class="card-inner">
+                <h2 class="card-title"></h2>
+                <p class="card-tag"></p>
+                <div id="card-radar" style="width:300px;height:300px;margin:20px auto;"></div>
+                <!-- 绑定 images/qr.png 二维码 -->
+                <div class="qr-box">
+                    <img src="images/qr.png" alt="测评二维码" class="qr-img" onerror="this.style.display='none';this.nextElementSibling.style='block'">
+                    <div class="qr-fallback">二维码</div>
+                    <p>扫码查看测评</p>
+                </div>
+            </div>
+        </div>
+        <div class="card-btn-group">
+            <button id="downloadCard">保存卡片图片</button>
+            <button id="resetBtn">重新测试</button>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
