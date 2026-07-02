@@ -1,0 +1,147 @@
+{
+  "quizTitle": "AI能力测评",
+  "description": "测试你的AI使用习惯与综合能力，完成测评生成专属能力分享卡片",
+  "brand": {
+    "logo": "images/logo.png",
+    "qrCode": "images/qr.png"
+  },
+  "questions": [
+    {
+      "id": 1,
+      "type": "single",
+      "title": "遇到AI工具你会",
+      "options": [
+        {"text": "马上试", "score": 4},
+        {"text": "了解", "score": 3},
+        {"text": "观望", "score": 2},
+        {"text": "不管", "score": 1}
+      ]
+    },
+    {
+      "id": 2,
+      "type": "single",
+      "title": "关于学习方式你更倾向于",
+      "options": [
+        {"text": "实践", "score": 4},
+        {"text": "系统学", "score": 3},
+        {"text": "跟教程", "score": 2},
+        {"text": "随便", "score": 1}
+      ]
+    },
+    {
+      "id": 3,
+      "type": "single",
+      "title": "你对AI的使用频率是",
+      "options": [
+        {"text": "每天", "score": 4},
+        {"text": "每周", "score": 3},
+        {"text": "偶尔", "score": 2},
+        {"text": "不用", "score": 1}
+      ]
+    },
+    {
+      "id": 4,
+      "type": "single",
+      "title": "遇到问题你会如何处理",
+      "options": [
+        {"text": "AI解决", "score": 4},
+        {"text": "自己", "score": 3},
+        {"text": "朋友", "score": 2},
+        {"text": "放弃", "score": 1}
+      ]
+    },
+    {
+      "id": 5,
+      "type": "single",
+      "title": "你对一项任务处理的态度是",
+      "options": [
+        {"text": "拆解", "score": 4},
+        {"text": "规划", "score": 3},
+        {"text": "边做边改", "score": 2},
+        {"text": "拖延", "score": 1}
+      ]
+    },
+    {
+      "id": 6,
+      "type": "single",
+      "title": "你的技术态度是",
+      "options": [
+        {"text": "积极", "score": 4},
+        {"text": "谨慎", "score": 3},
+        {"text": "观望", "score": 2},
+        {"text": "不关心", "score": 1}
+      ]
+    },
+    {
+      "id": 7,
+      "type": "single",
+      "title": "你的学习偏好更倾向于",
+      "options": [
+        {"text": "项目", "score": 4},
+        {"text": "视频", "score": 3},
+        {"text": "书", "score": 2},
+        {"text": "碎片", "score": 1}
+      ]
+    },
+    {
+      "id": 8,
+      "type": "single",
+      "title": "你有关AI的用途是",
+      "options": [
+        {"text": "效率", "score": 4},
+        {"text": "学习", "score": 3},
+        {"text": "娱乐", "score": 2},
+        {"text": "不用", "score": 1}
+      ]
+    },
+    {
+      "id": 9,
+      "type": "single",
+      "title": "你对AI替代工作的想法是",
+      "options": [
+        {"text": "支持", "score": 4},
+        {"text": "部分", "score": 3},
+        {"text": "不确定", "score": 2},
+        {"text": "反对", "score": 1}
+      ]
+    },
+    {
+      "id": 10,
+      "type": "single",
+      "title": "你对AI的未来持什么态度",
+      "options": [
+        {"text": "乐观", "score": 4},
+        {"text": "一般", "score": 3},
+        {"text": "中立", "score": 2},
+        {"text": "担忧", "score": 1}
+      ]
+    }
+  ],
+  "radarIndicator": [
+    {"name": "学习力", "max": 10},
+    {"name": "执行力", "max": 10},
+    {"name": "创新力", "max": 10},
+    {"name": "适应力", "max": 10},
+    {"name": "技术感", "max": 10}
+  ],
+  "results": [
+    {
+      "range": [33, 40],
+      "level": "AI探索者",
+      "description": "你主动拥抱AI技术，擅长借助工具提升效率，乐于主动学习新技术，创新与适应能力极强。",
+      "tags": ["创造力强", "高频使用AI", "主动学习"]
+    },
+    {
+      "range": [25, 32],
+      "level": "AI学习者",
+      "description": "你愿意接受AI工具，有稳定的学习习惯，能理性分辨AI的利弊，稳步提升自身能力。",
+      "tags": ["稳步学习AI", "理性看待工具"]
+    },
+    {
+      "range": [10, 24],
+      "level": "AI观察者",
+      "description": "你对AI保持观望态度，较少主动使用，更习惯传统方式解决问题，需要多接触数字工具。",
+      "tags": ["谨慎观望", "较少接触AI"]
+    }
+  ]
+}
